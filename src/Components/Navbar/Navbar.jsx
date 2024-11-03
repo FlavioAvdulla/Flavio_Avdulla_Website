@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
-const Navbar = ({ setShowLogin }) => {
-  const [menu, setMenu] = useState("home");
-  const [mobileMenu, setMobileMenu] = useState(false);
+const Navbar = () => {
+  const [mobileMenu, setMobileMenu] = useState(true);
   const [iconColor, setIconColor] = useState(false);
 
   const toggleMenu = () => {
@@ -16,21 +15,20 @@ const Navbar = ({ setShowLogin }) => {
     <nav className="navbar">
       <i
         className={`fa-solid fa-bars ${iconColor ? "active-icon" : ""}`}
-        alt=""
         onClick={toggleMenu}
       ></i>
       <ul className={`navbar-menu ${mobileMenu ? "open" : "closed"}`}>
         <li>
-          <a>HOME</a>
+          <Link to="/">HOME</Link>
         </li>
         <li>
-          <a>PROJECTS</a>
+          <Link to="/Projects">PROJECTS</Link>
         </li>
         <li>
-          <a>ABOUT ME</a>
+          <Link to="/About">ABOUT ME</Link>
         </li>
         <li>
-          <a>CONTACTS</a>
+          <Link to="/Contacts">CONTACTS</Link>
         </li>
       </ul>
     </nav>

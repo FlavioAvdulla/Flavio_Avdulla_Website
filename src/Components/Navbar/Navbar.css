@@ -1,8 +1,8 @@
 .navbar {
-
-}
-
-.navbar-menu {
+    /* Add necessary styles for your navbar */
+  }
+  
+  .navbar-menu {
     display: flex;
     list-style: none;
     gap: 20px;
@@ -17,56 +17,51 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    z-index: -1;
-}
-
-.navbar .fa-bars {
-    display: fixed;
-    color: black;
+    z-index: 2;
+  }
+  
+  .navbar .fa-bars {
+    position: fixed;
+    color: white;
     cursor: pointer;
     font-size: 22px;
     padding-left: 1350px;
     padding-top: 30px;
     transition: 0.3s ease-in-out;
-    z-index: 1;
-}
-
-.navbar .fa-bars.active-icon {
-    color: white;
-}
-
-.navbar li {
+    z-index: 3;
+  }
+  
+  .navbar .fa-bars.active-icon {
+    color: black;
+  }
+  
+  .navbar li {
     padding: 50px;
-}
-.navbar-menu li a {
     cursor: pointer;
-    text-decoration: none;
-    color: inherit;
-}
-
-
-
-/*================== SLIDE IN AND OUT */
-@keyframes slideIn {
+  }
+  
+  /*================== SLIDE IN AND OUT */
+  @keyframes slideIn {
     from { transform: translateX(100%); }
     to { transform: translateX(0); }
-}
-
-@keyframes slideOut {
+  }
+  
+  @keyframes slideOut {
     from { transform: translateX(0); }
     to { transform: translateX(100%); }
-}
-
-.navbar-menu {
+  }
+  
+  .navbar-menu {
     transform: translateX(100%);
-}
-
-.navbar-menu.open {
+  }
+  
+  .navbar-menu.open {
     animation: slideIn 0.6s forwards;
     transform: translateX(0);
-}
-
-.navbar-menu.closed {
+  }
+  
+  .navbar-menu.closed {
     animation: slideOut 0.6s forwards;
     transform: translateX(0);
-}
+  }
+  
