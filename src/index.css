@@ -5,6 +5,10 @@
   margin: 0;
   font-family: Lato;
   box-sizing: border-box;
+
+  /* variables */
+  --white-color: white;
+  --grey-color: rgb(243, 243, 243);
 }
 
 body {
