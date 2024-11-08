@@ -1,11 +1,12 @@
 import Polaris_SM from "../assets/images/Polaris_SM.jpg";
+import Polaris_SM_01 from "../assets/images/Polaris_SM_01.jpg";
 
 export const texts = [
     {
       _id: "1",
-      image: Polaris_SM,
-      project_title: "Project Title 1",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry, Lorem Ipsum is simply dummy text of."
+      image: Polaris_SM_01,
+      project_title: "Polaris Online Store",
+      description: "Polaris is a dynamic online store offering top-tier dropshipping services."
     },
     {
       _id: "2",
