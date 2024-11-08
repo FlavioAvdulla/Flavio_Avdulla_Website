@@ -8,7 +8,8 @@
 
   /* variables */
   --white-color: white;
-  --grey-color: rgb(243, 243, 243);
+  --grey-color: rgba(0, 0, 0, 0.567);
+  --black-gradient: linear-gradient(to top, rgba(0, 0, 0, 0.567), rgba(0, 0, 0, 0));
 }
 
 body {
