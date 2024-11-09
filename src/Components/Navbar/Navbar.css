@@ -1,67 +1,85 @@
 .navbar {
-    /* Add necessary styles for your navbar */
-  }
   
-  .navbar-menu {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    color: white;
-    font-size: 18px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 15%;
-    background-color: rgb(0, 0, 0);
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    z-index: 2;
-  }
-  
-  .navbar .fa-bars {
-    position: fixed;
-    color: white;
-    cursor: pointer;
-    font-size: 22px;
-    margin-left: 1444px;
-    padding-top: 30px;
-    transition: 0.3s ease-in-out;
-    z-index: 3;
-  }
-  
-  .navbar .fa-bars.active-icon {
-    color: black;
-  }
-  
-  .navbar li {
-    padding: 50px;
-    cursor: pointer;
-  }
-  
-  /*================== SLIDE IN AND OUT */
-  @keyframes slideIn {
-    from { transform: translateX(100%); }
-    to { transform: translateX(0); }
-  }
-  
-  @keyframes slideOut {
-    from { transform: translateX(0); }
-    to { transform: translateX(100%); }
-  }
-  
-  .navbar-menu {
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 15%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.navbar .fa-bars {
+  position: fixed;
+  color: white;
+  cursor: pointer;
+  font-size: 22px;
+  margin-left: 95.5%;
+  padding-top: 30px;
+  transition: 0.3s ease-in-out;
+  z-index: 3;
+}
+
+.navbar .fa-bars.active-icon {
+  color: white;
+}
+
+.navbar ul {
+  background-color: rgba(0, 0, 0, 0.359);
+  backdrop-filter: blur(10px);
+}
+
+.navbar li {
+  padding: 20% 21%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s ease-in-out;
+  color: var(--white-color);
+}
+
+.navbar li:hover {
+  font-size: 23px;
+}
+
+/*================== SLIDE IN AND OUT */
+@keyframes slideIn {
+  from {
     transform: translateX(100%);
   }
-  
-  .navbar-menu.open {
-    animation: slideIn 0.6s forwards;
+
+  to {
     transform: translateX(0);
   }
-  
-  .navbar-menu.closed {
-    animation: slideOut 0.6s forwards;
+}
+
+@keyframes slideOut {
+  from {
     transform: translateX(0);
   }
-  
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.navbar-menu {
+  transform: translateX(100%);
+}
+
+.navbar-menu.open {
+  animation: slideIn 0.6s forwards;
+  transform: translateX(0);
+}
+
+.navbar-menu.closed {
+  animation: slideOut 0.6s forwards;
+  transform: translateX(0);
+}
