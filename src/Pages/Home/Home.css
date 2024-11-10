@@ -1,32 +1,79 @@
 .home {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .home_image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
-  
-  .home h1 {
-    margin: 210px 0px 0px 150px;
-    color: var(--white-color);
-    font-weight: 500;
-    font-size: 50px;
-  }
-  
-  .home_image.visible {
-    opacity: 1;
-  }
-  
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.home h1 {
+  margin: 210px 0px 0px 150px;
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.home_image.visible {
+  opacity: 1;
+}
+
+/* ================ Profile */
+
+.profile {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 380px;
+  border-radius: 100px;
+  bottom: 0;
+  left: 0;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.359);
+  backdrop-filter: blur(10px);
+  padding: 15px;
+
+}
+
+.profile_info {
+  display: flex;
+  flex-direction: column;
+  margin: 0px  45px 0px 30px;
+}
+
+.profile img{
+  width: 15%;
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+}
+
+.profile_info h2{
+  font-size: 22px;
+  color: var(--white-color);
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+.profile_info h2:hover {
+  text-decoration: underline 1px;
+}
+
+.profile_info p {
+  color: var(--white-color);
+  font-weight: 300;
+}

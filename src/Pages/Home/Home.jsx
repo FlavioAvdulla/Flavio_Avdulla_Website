@@ -34,6 +34,19 @@ const Home = () => {
           alt={`home_image_${index + 1}`}
         />
       ))}
+      <div className="profile">
+        <img
+          ahref="https://www.behance.net/flavioavdulla"
+          src="src/assets/images/home/flavio.jpg"
+          alt="flavio-image"
+        />
+        <div className="profile_info">
+          <a href="https://www.behance.net/flavioavdulla">
+            <h2>Flavio Avdulla</h2>
+          </a>
+          <p>Graphic Designer & 3d Modeler</p>
+        </div>
+      </div>
     </div>
   );
 };
