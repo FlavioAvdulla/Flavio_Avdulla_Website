@@ -1,12 +1,13 @@
 import React from "react";
 import "./Polaris_Online_Store.css";
-import polarisImage_01 from "../../assets/images/Polaris_Store_02.jpg";
+import polarisImage_01 from "../../assets/images/Polaris_Store_02.png";
 import polarisImage_02 from "../../assets/images/Polaris_Store_03.jpg";
 import polarisImage_03 from "../../assets/images/Polaris_Store_04.jpg";
 import polarisImage_04 from "../../assets/images/Polaris_Store_05.jpg";
 import polarisImage_05 from "../../assets/images/Polaris_Store_09.jpg";
 import polarisImage_06 from "../../assets/images/Polaris_Store_10.jpg";
 import polarisImage_07 from "../../assets/images/Polaris_Store_11.jpg";
+import polarisImage_08 from "../../assets/images/home/home_05.jpg";
 
 const Polaris_Online_Store = () => {
   return (
@@ -24,7 +25,7 @@ const Polaris_Online_Store = () => {
           our users, driving the future of online retail.
           <hr />
           <br />
-          Year — 2024 | Client — Polaris Online Store | Project → Logo & Brand
+          Year → 2024 | Client → Polaris Online Store | Project → Logo & Brand
           Identity | All rights reserved ©
         </p>
       </div>
@@ -49,6 +50,7 @@ const Polaris_Online_Store = () => {
       <img className="photo_05" src={polarisImage_05} alt="polaris_image_09" />
       <img className="photo_06" src={polarisImage_06} alt="polaris_image_10" />
       <img className="photo_07" src={polarisImage_07} alt="polaris_image_11" />
+      <img className="polaris_cover" src={polarisImage_08} alt="polaris_image_09" />
     </div>
   );
 };

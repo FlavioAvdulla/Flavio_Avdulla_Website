@@ -5,6 +5,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import Projects from "./Pages/Projects/Projects";
 import Home from "./Pages/Home/Home";
 import Polaris_Online_Store from "./Pages/Polaris_Online_Store/Polaris_Online_Store";
+import Mens_SkinCare from "./Pages/Mens_SkinCare/Mens_SkinCare";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/Projects" element={<Projects />} />
           <Route path="/Polaris_Online_Store" element={<Polaris_Online_Store />} />
+          <Route path="/Mens_SkinCare" element={<Mens_SkinCare />} />
         </Routes>
       </Router>
     </div>

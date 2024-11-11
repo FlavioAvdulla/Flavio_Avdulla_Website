@@ -19,6 +19,9 @@ const Projects = () => {
     if (id === "1") {
       navigate("/Polaris_Online_Store");
     }
+    if (id === "2") {
+      navigate("/Mens_SkinCare");
+    }
   };
 
   return (
@@ -39,7 +42,11 @@ const Projects = () => {
       </div>
       <div className="content-grid">
         {texts.map((text) => (
-          <div key={text._id} className="projects" onClick={() => handleImageClick(text._id)}>
+          <div
+            key={text._id}
+            className="projects"
+            onClick={() => handleImageClick(text._id)}
+          >
             <div className="projects-text-container">
               <h1>{text.project_title}</h1>
               <p>
@@ -57,10 +64,7 @@ const Projects = () => {
                 {expandedProjects[text._id] ? "Show Less" : "Show More"}
               </button>
             </div>
-            <img
-              src={text.image}
-              alt={text.project_title}
-            />
+            <img src={text.image} alt={text.project_title} />
           </div>
         ))}
       </div>

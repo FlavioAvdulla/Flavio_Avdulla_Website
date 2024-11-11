@@ -1,5 +1,6 @@
 import Polaris_SM from "../assets/images/Polaris_SM.jpg";
 import Polaris_SM_01 from "../assets/images/Polaris_SM_01.jpg";
+import Skin_Oil from "../assets/images/skin_oil/skin_01.jpg";
 
 export const texts = [
     {
@@ -10,9 +11,9 @@ export const texts = [
     },
     {
       _id: "2",
-      image: Polaris_SM,
-      project_title: "Project Title 2",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry, Lorem Ipsum is simply dummy text of."
+      image: Skin_Oil,
+      project_title: "Men's SkinCare",
+      description: "Men's SkinCare, Orgatural Face & Skin Oil. Moroccan Argan Oil, European Raspberry Seed Oil, Indian Castor Oil."
     },
     {
       _id: "3",

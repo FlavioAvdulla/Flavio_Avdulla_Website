@@ -1,0 +1,49 @@
+.skincare_container {
+    padding: 0px 100px 0px 100px;
+    width: 90%;
+    margin: auto;
+}
+
+.skincare_container .photo_01,
+.photo_02,
+.photo_03,
+.photo_04,
+.photo_05 {
+    width: 100%;
+    padding: 30px 0px 30px 0px;
+}
+
+.skin_cover {
+    position: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.skin_content h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 100px 0px 30px 0px;
+    color: var(--white-color);
+    z-index: -1;
+}
+
+.skin_content,
+.skin_content p {
+    padding-top: 10px;
+    text-align: justify;
+    text-align-last: center;
+    font-weight: 400;
+    /* text-align-last: center; */
+    padding: 0 30px 10px 30px;
+    color: var(--white-color);
+}
+
+.skin_content hr {
+    margin-top: 23px;
+}
