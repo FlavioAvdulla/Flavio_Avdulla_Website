@@ -1,0 +1,62 @@
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.submit_btn {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.contacts label {
+    display: flex;
+    padding: 10px;
+    color: var(--white-color);
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.contacts .p {
+    color: var(--white-color);
+    z-index: 1000;
+}
+
+.contacts input,
+textarea {
+    background-color: rgba(0, 0, 0, 0.359);
+    backdrop-filter: blur(10px);
+    border: none;
+    width: 400px;
+    height: 30px;
+    color: var(--white-color);
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    resize:vertical;
+}
+
+.contacts textarea {
+    height: 200px;
+}
+
+.contacts img {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}

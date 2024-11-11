@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
 import home_01 from "../../assets/images/home/home_01.jpg";
-// import home_02 from "../../assets/images/home/home_02.jpg";
 import home_03 from "../../assets/images/home/home_03.jpg";
 import home_04 from "../../assets/images/home/home_04.jpg";
 import home_05 from "../../assets/images/home/home_05_1.jpg";
