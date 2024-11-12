@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+
 }
 
 .submit_btn {
@@ -16,7 +17,8 @@
     cursor: pointer;
 }
 
-.contacts label {
+.contacts label,
+span {
     display: flex;
     padding: 10px;
     color: var(--white-color);
@@ -24,7 +26,7 @@
     font-weight: 300;
 }
 
-.contacts .p {
+.contacts .label p {
     color: var(--white-color);
     z-index: 1000;
 }
@@ -33,7 +35,6 @@
 textarea {
     background-color: rgba(0, 0, 0, 0.359);
     backdrop-filter: blur(10px);
-    border: none;
     width: 400px;
     height: 30px;
     color: var(--white-color);
@@ -41,7 +42,21 @@ textarea {
     padding: 20px;
     font-size: 15px;
     font-weight: 300;
-    resize:vertical;
+    resize: vertical;
+    border: 1px solid rgba(0, 0, 0, 0.359);
+    scrollbar-width: none;
+    outline: none;
+
+}
+
+.contacts input::placeholder,
+textarea::placeholder {
+    color: rgb(214, 214, 214);
+}
+
+.contacts input:hover,
+textarea:hover {
+    border: 1px solid var(--white-color);
 }
 
 .contacts textarea {
@@ -52,11 +67,40 @@ textarea {
     position: absolute;
     background-repeat: no-repeat;
     background-position: center;
-    object-fit: cover;
+    /* object-fit: cover; */
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     object-fit: cover;
     z-index: -1;
+}
+
+.flavio_info {
+    margin-right: 100px;
+    text-align: justify;
+    text-align-last: left;
+    width: 500px;
+    font-size: 22px;
+    color: var(--white-color);
+    
+    transition: 0.1s ease-in-out;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.flavio_info h2 {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 25px;
+
+}
+
+.name {
+    width: 31%;
+}
+
+.flavio_info h2:hover {
+    text-decoration: underline 1px;
+    cursor: pointer;
 }

@@ -40,9 +40,11 @@ const Home = () => {
           alt="flavio-image"
         />
         <div className="profile_info">
-          <a href="https://www.behance.net/flavioavdulla">
-            <h2>Flavio Avdulla</h2>
-          </a>
+          <div className="profile_name">
+            <a href="https://www.behance.net/flavioavdulla">
+              <h2>Flavio Avdulla</h2>
+            </a>
+          </div>
           <p>Graphic Designer & 3d Modeler</p>
         </div>
       </div>
