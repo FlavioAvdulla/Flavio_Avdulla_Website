@@ -22,6 +22,9 @@ const Projects = () => {
     if (id === "2") {
       navigate("/Mens_SkinCare");
     }
+    if (id === "3") {
+      navigate("/Logo_Designs");
+    }
   };
 
   return (

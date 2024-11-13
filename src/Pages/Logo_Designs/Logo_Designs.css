@@ -1,0 +1,25 @@
+.logo_designs {
+    
+}
+
+.logo_designs_images {
+    display: grid;
+    margin: auto;
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo-content {
+    padding: 100px;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.logo-content h1 {
+    font-weight: var(--bold-header);
+    padding-bottom: 30px;
+    font-size: 2.5rem;
+}

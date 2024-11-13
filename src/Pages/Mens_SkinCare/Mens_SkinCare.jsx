@@ -18,9 +18,14 @@ const Mens_SkinCare = () => {
         </p>
       </div>
       <img className="photo_01" src={skin_image_02} alt="skin_image_02" />
+      <hr />
       <img className="photo_02" src={skin_image_03} alt="skin_image_03" />
+      <hr />
       <img className="photo_03" src={skin_image_04} alt="skin_image_04" />
+
+      <hr />
       <img className="photo_04" src={skin_image_06} alt="skin_image_05" />
+      <hr />
       <img className="photo_05" src={skin_image_06} alt="skin_image_06" />
       <img className="skin_cover" src={skin_cover} alt="skin_image_06" />
     </div>
