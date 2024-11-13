@@ -26,11 +26,18 @@ import Joors_02 from "../../assets/images/Logos/Logo_joors_02.jpg";
 import Joors_03 from "../../assets/images/Logos/Logo_joors_03.jpg";
 
 const Logo_Designs = () => {
+  document.querySelectorAll(".logo_designs_images img").forEach((img) => {
+    if (img.src.includes("_01")) {
+      img.classList.add("highlight");
+    }
+  });
+
   return (
     <div className="logo_designs">
       <div className="logo-content">
-        <h1>dgregeraerherh</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+        <h1>Logo Designs</h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book. It has survived not only
@@ -38,11 +45,38 @@ const Logo_Designs = () => {
           remaining essentially unchanged. It was popularised in the 1960s with
           the release of Letraset sheets containing Lorem Ipsum passages, and
           more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.</p>
+          including versions of Lorem Ipsum.
+        </p>
       </div>
 
       <div className="logo_designs_images">
-        {[Bluemedia_01, Bluemedia_02, Bluemedia_03, Boss_01, Boss_02, Boss_03, Casa_01, Casa_02, Casa_03, Housing_01, Housing_02, Housing_03, Iliria_01, Iliria_02, Iliria_03, Joors_01, Joors_02, Joors_03].map((src, index) => ( <img key={index} className={`photo_${index + 1}`} src={src} alt={`Logo_image_${index + 1}`} /> ))}
+        {[
+          Bluemedia_01,
+          Bluemedia_02,
+          Bluemedia_03,
+          Boss_01,
+          Boss_02,
+          Boss_03,
+          Casa_01,
+          Casa_02,
+          Casa_03,
+          Housing_01,
+          Housing_02,
+          Housing_03,
+          Iliria_01,
+          Iliria_02,
+          Iliria_03,
+          Joors_01,
+          Joors_02,
+          Joors_03,
+        ].map((src, index) => (
+          <img
+            key={index}
+            className={`photo_${index + 1}`}
+            src={src}
+            alt={`Logo_image_${index + 1}`}
+          />
+        ))}
       </div>
     </div>
   );

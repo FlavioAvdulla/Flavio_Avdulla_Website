@@ -1,15 +1,22 @@
 .logo_designs {
-    
+    margin: auto;
+    width: 90%;
+    padding: 0px 0px 100px 0px;
 }
 
 .logo_designs_images {
     display: grid;
-    margin: auto;
-    width: 90%;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-    justify-content: center;
-    text-align: center;
+}
+
+.logo_designs_images img {
+    width: 100%;
+    /* padding: 30px 0px 30px 0px; */
+}
+
+.highlight {
+    border: 1px solid black;
 }
 
 .logo-content {
