@@ -3,22 +3,22 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-
+    background-color: transparent;
 }
 
-.submit_btn {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0px;
-    border: none;
-    border-radius: 30px;
-    padding: 15px;
-    width: 150px;
-    cursor: pointer;
+@keyframes slideInY {
+    0% {
+        transform: translateY(-30%);
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
 
-.contacts label,
-span {
+.animate-label {
+    animation: slideInY 1s ease-in-out forwards;
+    opacity: 0;
     display: flex;
     padding: 10px;
     color: var(--white-color);
@@ -26,9 +26,24 @@ span {
     font-weight: 300;
 }
 
-.contacts .label p {
+.submit_btn {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 15px;
+    width: 150px;
+    cursor: pointer;
+    animation: slideInY 1s ease-in-out forwards;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.submit_btn:hover {
+    border: 1px solid white;
+    background: none;
     color: var(--white-color);
-    z-index: 1000;
 }
 
 .contacts input,
@@ -46,12 +61,17 @@ textarea {
     border: 1px solid rgba(0, 0, 0, 0.359);
     scrollbar-width: none;
     outline: none;
-
+    animation: slideInY 1s ease-in-out forwards;
+    opacity: 0;
 }
 
 .contacts input::placeholder,
 textarea::placeholder {
     color: rgb(214, 214, 214);
+}
+
+.textarea:focus {
+    outline: none;
 }
 
 .contacts input:hover,
@@ -80,27 +100,29 @@ textarea:hover {
     margin-right: 100px;
     text-align: justify;
     text-align-last: left;
-    width: 500px;
+    width: 300px;
     font-size: 22px;
     color: var(--white-color);
-    
     transition: 0.1s ease-in-out;
     font-size: 15px;
     font-weight: 300;
+    animation: slideInY 1s ease-in-out forwards;
+    opacity: 0;
+    
 }
 
 .flavio_info h2 {
     margin-bottom: 20px;
     font-weight: 500;
     font-size: 25px;
-
 }
 
 .name {
-    width: 31%;
+    width: 51%;
 }
 
 .flavio_info h2:hover {
     text-decoration: underline 1px;
     cursor: pointer;
 }
+

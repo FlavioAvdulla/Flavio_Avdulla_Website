@@ -25,6 +25,9 @@ const Projects = () => {
     if (id === "3") {
       navigate("/Logo_Designs");
     }
+    if (id === "4") {
+      navigate("/Fruit_mix");
+    }
   };
 
   return (
@@ -44,10 +47,11 @@ const Projects = () => {
         </p>
       </div>
       <div className="content-grid">
-        {texts.map((text) => (
+        {texts.map((text, index) => (
           <div
             key={text._id}
             className="projects"
+            style={{animationDelay: `${index * 0.1}s`}}
             onClick={() => handleImageClick(text._id)}
           >
             <div className="projects-text-container">

@@ -21,3 +21,27 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/* For Webkit browsers like Chrome, Safari */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ea2d2d; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounding the corners of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff0000; /* Color when hovering over the scrollbar thumb */
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: thin; /* Size of the scrollbar */
+  scrollbar-color: #ffffff #696969; /* Colors for the scrollbar thumb and track */
+}

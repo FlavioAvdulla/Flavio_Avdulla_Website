@@ -32,40 +32,58 @@ const Contacts = () => {
   return (
     <div className="contacts">
       <div className="flavio_info">
-        <img
-          ahref="https://www.behance.net/flavioavdulla"
-          src="src/assets/images/home/flavio.jpg"
-          alt="flavio-image"
-        />
         <div className="name">
           <a href="https://www.behance.net/flavioavdulla">
             <h2>Flavio Avdulla</h2>
           </a>
-          </div>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+        <p>
+          Hi, I'm Flavio Avdulla, a graphic designer based in Tirana, Albania.
+          Graduated at Harry Fultz in 2018-2019 (Graphic Design) and currently
+          studying at Holberton School Tirana. Work ethic and discipline is part
+          of my daily life. I'm a generalist, which means that i make almost
+          anything from: Print Designs and Graphic Motions (2D), to 3d Modeling,
+          and Texturing. Softwares i use: Adobe photoshop, Adobe Illustrator,
+          Adobe After effects, Adobe Premiere pro, Adobe Indesign, Autodesk
+          3dsmax, Substance Painter.
+        </p>
       </div>
 
       <form onSubmit={onSubmit}>
-        <label>Your Name</label>
-        <input type="text" name="name" placeholder="Enter you name" required />
+        <label className="animate-label" style={{ animationDelay: "0.3s" }}>
+          Full Name
+        </label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter you name"
+          required
+          style={{ animationDelay: "0.3s" }}
+        />
 
-        <label>Phone Number</label>
+        <label className="animate-label" style={{ animationDelay: "0.6s" }}>
+          Phone Number
+        </label>
         <input
           type="text"
           name="phone"
           placeholder="Enter your number"
           required
+          style={{ animationDelay: "0.6s" }}
         />
 
-        <label>Email</label>
+        <label className="animate-label" style={{ animationDelay: "0.9s" }}>
+          Email
+        </label>
         <input
           type="text"
-          name="phone"
+          name="email"
           placeholder="Enter your email"
           required
+          style={{ animationDelay: "0.9s" }}
         />
 
-        <label>
+        <label className="animate-label" style={{ animationDelay: "1.1s" }}>
           <p>Write your message here</p>
         </label>
         <textarea
@@ -73,9 +91,14 @@ const Contacts = () => {
           row="6"
           placeholder="Enter you message"
           required
+          style={{ animationDelay: "1.1s" }}
         ></textarea>
 
-        <button type="submit" className="submit_btn">
+        <button
+          type="submit"
+          className="submit_btn"
+          style={{ animationDelay: "1.4s" }}
+        >
           SUBMIT NOW
         </button>
       </form>

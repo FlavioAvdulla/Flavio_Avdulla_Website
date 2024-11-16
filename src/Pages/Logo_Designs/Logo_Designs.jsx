@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Logo_Designs.css";
 // Bluemedia Logo
 import Bluemedia_01 from "../../assets/images/Logos/Logo_bluemedia_01.jpg";
@@ -25,12 +25,36 @@ import Joors_01 from "../../assets/images/Logos/Logo_joors_01.jpg";
 import Joors_02 from "../../assets/images/Logos/Logo_joors_02.jpg";
 import Joors_03 from "../../assets/images/Logos/Logo_joors_03.jpg";
 
+const logos = [
+  Bluemedia_01,
+  Bluemedia_02,
+  Bluemedia_03,
+  Boss_01,
+  Boss_02,
+  Boss_03,
+  Casa_01,
+  Casa_02,
+  Casa_03,
+  Housing_01,
+  Housing_02,
+  Housing_03,
+  Iliria_01,
+  Iliria_02,
+  Iliria_03,
+  Joors_01,
+  Joors_02,
+  Joors_03,
+];
+
 const Logo_Designs = () => {
-  document.querySelectorAll(".logo_designs_images img").forEach((img) => {
-    if (img.src.includes("_01")) {
-      img.classList.add("highlight");
-    }
-  });
+  useEffect(() => {
+    const images = document.querySelectorAll(".logo_designs_images img");
+    images.forEach((img) => {
+      if (img.src.includes("_01")) {
+        img.classList.add("highlight");
+      }
+    });
+  }, []);
 
   return (
     <div className="logo_designs">
@@ -50,31 +74,13 @@ const Logo_Designs = () => {
       </div>
 
       <div className="logo_designs_images">
-        {[
-          Bluemedia_01,
-          Bluemedia_02,
-          Bluemedia_03,
-          Boss_01,
-          Boss_02,
-          Boss_03,
-          Casa_01,
-          Casa_02,
-          Casa_03,
-          Housing_01,
-          Housing_02,
-          Housing_03,
-          Iliria_01,
-          Iliria_02,
-          Iliria_03,
-          Joors_01,
-          Joors_02,
-          Joors_03,
-        ].map((src, index) => (
+        {logos.map((src, index) => (
           <img
             key={index}
             className={`photo_${index + 1}`}
             src={src}
             alt={`Logo_image_${index + 1}`}
+            style={{ animationDelay: `${0.1 * index}s` }}
           />
         ))}
       </div>

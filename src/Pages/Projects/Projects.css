@@ -29,6 +29,18 @@
     box-shadow: 0px 0px 10px #00000030;
     /* background-color: var(--white-color); */
     overflow: hidden; /* Ensures the image doesn't overflow the container */
+    animation: slideInY 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes slideInY {
+    0% {
+        transform: translateY(-30%);
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
 
 .projects img {

@@ -39,12 +39,10 @@
 
 .skin_content,
 .skin_content p {
-    padding-top: 10px;
     text-align: justify;
     text-align-last: center;
     font-weight: 300;
-    /* text-align-last: center; */
-    padding: 0 30px 10px 30px;
+    padding: 10px 30px 10px 30px;
     color: rgb(187, 255, 242);
     
 }

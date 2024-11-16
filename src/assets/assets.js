@@ -2,6 +2,7 @@ import Polaris_SM from "../assets/images/Polaris_SM.jpg";
 import Polaris_SM_01 from "../assets/images/Polaris_SM_01.jpg";
 import Skin_Oil from "../assets/images/skin_oil/skin_01.jpg";
 import Logo_cover from "../assets/images/logos/logo_cover.jpg";
+import Fruit_mix from "../assets/images/fruit_mix/fruit_mix_cover.jpg";
 
 export const texts = [
     {
@@ -24,8 +25,8 @@ export const texts = [
     },
     {
       _id: "4",
-      image: Polaris_SM,
-      project_title: "Project Title 4",
+      image: Fruit_mix,
+      project_title: "Fruit Mix Design",
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry, Lorem Ipsum is simply dummy text of."
     },
     {
