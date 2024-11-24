@@ -17,6 +17,11 @@
     font-weight: var(--bold-header);
     padding-bottom: 30px;
     font-size: 2.5rem;
+    color: rgb(228, 35, 41);
+}
+
+.project-content p {
+    padding: 0px 100px 0px 100px;
 }
 
 .projects {
@@ -79,7 +84,7 @@
     font-weight: 400;
     text-align: center;
     color: var(--white-color);
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
 }
 
 .projects-text-container p {

@@ -11,7 +11,7 @@ import polarisImage_08 from "../../assets/images/home/home_05.jpg";
 
 const Polaris_Online_Store = () => {
   return (
-    <div className="polaris_container">
+    <div className="polaris_container" >
       <div className="polaris_content_01">
         <h1>Polaris Online Store</h1>
         <p>
@@ -23,14 +23,12 @@ const Polaris_Online_Store = () => {
           shopping process, catering to the needs of both customers and partner
           businesses. We focus on enhancing the convenience and satisfaction of
           our users, driving the future of online retail.
-          <hr />
-          <br />
+          <br /><br />
           Year → 2024 | Client → Polaris Online Store | Project → Logo & Brand
           Identity | All rights reserved ©
         </p>
       </div>
       <img className="photo_01" src={polarisImage_01} alt="polaris_image_02" />
-      <hr />
       <img className="photo_02" src={polarisImage_02} alt="polaris_image_03" />
       <div className="polaris_content_02">
         <p>
@@ -46,17 +44,12 @@ const Polaris_Online_Store = () => {
           and efficiency, making it suitable for a wide range of audiences.
         </p>
       </div>
-      <hr />
       <img className="photo_03" src={polarisImage_03} alt="polaris_image_04" />
-      <hr />
       <img className="photo_04" src={polarisImage_04} alt="polaris_image_05" />
-      <hr />
       <img className="photo_05" src={polarisImage_05} alt="polaris_image_09" />
-      <hr />
       <img className="photo_06" src={polarisImage_06} alt="polaris_image_10" />
-      <hr />
       <img className="photo_07" src={polarisImage_07} alt="polaris_image_11" />
-      <img className="polaris_cover" src={polarisImage_08} alt="polaris_image_09" />
+      {/* <img className="polaris_cover" src={polarisImage_08} alt="polaris_image_09" /> */}
     </div>
   );
 };

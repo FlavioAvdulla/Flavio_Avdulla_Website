@@ -14,20 +14,16 @@ const Mens_SkinCare = () => {
         <h1>Men's SkinCare</h1>
         <p>
         Elevate your skincare routine with Orgatural Face & Skin Oil, meticulously crafted for the modern man who values nature's purest offerings.<br/>This 100% organic oil is a luxurious blend of natural ingredients, designed to nourish, hydrate, and rejuvenate your skin.
-          <hr />
+          {/* <hr /> */}
         </p>
       </div>
       <img className="photo_01" src={skin_image_02} alt="skin_image_02" />
-      <hr />
       <img className="photo_02" src={skin_image_03} alt="skin_image_03" />
-      <hr />
       <img className="photo_03" src={skin_image_04} alt="skin_image_04" />
 
-      <hr />
       <img className="photo_04" src={skin_image_06} alt="skin_image_05" />
-      <hr />
-      <img className="photo_05" src={skin_image_06} alt="skin_image_06" />
-      <img className="skin_cover" src={skin_cover} alt="skin_image_06" />
+      {/* <img className="photo_05" src={skin_image_06} alt="skin_image_06" /> */}
+      {/* <img className="skin_cover" src={skin_cover} alt="skin_image_06" /> */}
     </div>
   );
 };
